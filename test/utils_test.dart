@@ -34,7 +34,7 @@ void main() {
     expect(utils, "Hello world i am foo");
   });
 
-  test('Remover assentos', () {
+  test('Remover acentos', () {
     final utils = Utils.removeAcentos(texto: "âãáêéíôõóúû ç");
     expect(utils, "aaaeeiooouu c");
   });

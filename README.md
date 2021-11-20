@@ -1,39 +1,38 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+# Utils Documentação
+---
+Formatar data padrão BR 
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
-```dart
-const like = 'sample';
+```final utils = Utils.formatDataBR(data: "2021-11-19");   -> "19/11/2021"
 ```
 
-## Additional information
+Formatar data padrão USA
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+```final utils = Utils.formatDataUSA(data: "19/11/2021"); -> "2021-11-19"
+```
+
+Formatar moeda Real
+
+```final utils = Utils.formatMoedaRealBR(valor: 1500.50); -> "1.500,50"
+```
+
+Formatar moeda Real para double
+
+```final utils = Utils.MoedaRealToDouble(valor: "1.500,50"); -> 1500.50
+```
+
+Remover caracteres especiais
+
+```final utils = Utils.removeCaracterEspecial(texto: "Hello, world! i am 'foo'"); -> Hello world i am foo
+```
+
+Remover acentos
+
+```final utils = Utils.removeAcentos(texto: "âãáêéíôõóúû ç"); -> "aaaeeiooouu c"
+```
+
+
+
+
+
+
