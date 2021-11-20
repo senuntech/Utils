@@ -1,6 +1,16 @@
 
 # Utils Documentação
 
+Adicionando dependência
+```
+utils:
+    git:
+      url: https://github.com/senuntech/Utils
+      ref: 1.0.0
+```
+
+
+
 Formatar data padrão BR 
 
 ```
